@@ -1,6 +1,6 @@
 package com.example.authentication.di.module
 
-import com.example.authentication.util.Constants.BASE_URL
+import com.example.authentication.util.NetworkConstants.BASE_URL
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import dagger.Module
 import dagger.Provides
