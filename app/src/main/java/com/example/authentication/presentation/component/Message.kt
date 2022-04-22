@@ -1,4 +1,4 @@
-package com.example.authentication.component
+package com.example.authentication.presentation.component
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*

@@ -1,4 +1,4 @@
-package com.example.authentication.navigation
+package com.example.authentication.presentation.navigation
 
 object Constants {
 

@@ -1,4 +1,4 @@
-package com.example.authentication.component
+package com.example.authentication.presentation.component
 
 import androidx.compose.animation.animateContentSize
 import androidx.compose.animation.core.LinearOutSlowInEasing

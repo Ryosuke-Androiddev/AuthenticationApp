@@ -1,4 +1,4 @@
-package com.example.authentication.component
+package com.example.authentication.presentation.component
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.tween
