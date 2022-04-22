@@ -7,6 +7,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.authentication.domain.model.MessageBarState
 import com.example.authentication.domain.repository.DataStoreRepository
+import com.example.authentication.util.GoogleAccountNotFoundException
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -35,5 +36,9 @@ class LoginScreenViewModel @Inject constructor(
         viewModelScope.launch(Dispatchers.IO) {
             repository.saveSignedInState(signedInState = signedInState)
         }
+    }
+
+    fun updateMessageBarState() {
+        _messageBarState.value = MessageBarState(error = GoogleAccountNotFoundException())
     }
 }
