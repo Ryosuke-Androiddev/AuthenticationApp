@@ -55,6 +55,9 @@ fun MessageBar(messageBarState: MessageBarState) {
     ) {
         // ここに直接Composableを書いてもいいんだけど、Previewするのが難しい(Stateで変化するUIだから)
         // よって、別Composableをここに呼び出し、別でPreviewする
-        MessageBar(messageBarState = messageBarState)
+        Message(
+            messageBarState = messageBarState,
+            errorMessage = errorMessage
+        )
     }
 }
